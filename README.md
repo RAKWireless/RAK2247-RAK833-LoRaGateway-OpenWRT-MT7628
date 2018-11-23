@@ -53,9 +53,9 @@ Finally compiled generated files firmware in the folder out/target/bin
 * Finally you will see the gateway overview, and Status is not connected
 <div align=center> <img src="https://github.com/RAKWireless/wiscore/blob/master/img/ThingsC_reg4.png" /> </div>
 
-2. Connect RAK833 to WisAp
+2. Power on, then [setup wifi](https://github.com/RAKWireless/wiscore/wiki/Setup-Wireless) or connect to your router with WisAp WAN port directly.
 
-3. Power on, then [setup wifi](https://github.com/RAKWireless/wiscore/wiki/Setup-Wireless)
+3. Connect RAK833 to WisAp usb port
 
 4. Check the connection of RAK833 and WisAp, excute:
 
@@ -75,8 +75,8 @@ check the gateway ID(Gateway EUI) and server address ,make sure they are consist
 	
 6. Start Lora Gateway
 
-power on the Gateway and the packet_forwarder will auto start. check the log file at /usr/bin/packet_forwarder/log
+	root@OpenWrt:/usr/bin/packet_forwarder#  ./lora_pkt_fwd
 	
-
 Finally you can see the Status is connected in the gateway overview, then the gateway will be started and you can use it.
+BTY. this project also tested with [loraserver](https://www.loraserver.io/).
 <div align=center> <img src="https://github.com/RAKWireless/wiscore/blob/master/img/ThingsC_con.png" /> </div>
