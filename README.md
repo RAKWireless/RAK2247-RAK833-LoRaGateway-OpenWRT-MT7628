@@ -18,11 +18,11 @@ Open terminal, and type the following:<br>
 Before you run make, you need to set compile environment first with envsetup.sh.
 
     cd ~/Desktop/RAK833-LoRaGateway-OpenWRT-MT7628
-    ./build/envsetup.sh
+    sudo ./build/envsetup.sh
 
 ### Step 3: Run Make to compile
 
-	make
+    sudo make
 
 Finally compiled generated files firmware in the folder out/target/bin
 
