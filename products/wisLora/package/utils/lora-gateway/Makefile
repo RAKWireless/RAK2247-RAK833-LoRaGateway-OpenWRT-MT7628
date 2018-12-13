@@ -45,6 +45,12 @@ define Build/Prepare
 	$(call Build/Prepare/Default)
 	cp ./files/loragw_spi.ftdi.c $(PKG_BUILD_DIR)/libloragw/src/loragw_spi.ftdi.c;
 	cp ./files/Makefile-gw-lib $(PKG_BUILD_DIR)/libloragw/Makefile;
+	cp ./files/Makefile-lbt-test $(PKG_BUILD_DIR)/util_lbt_test/Makefile
+	cp ./files/Makefile-pkt-logger $(PKG_BUILD_DIR)/util_pkt_logger/Makefile
+	cp ./files/Makefile-spectral-scan $(PKG_BUILD_DIR)/util_spectral_scan/Makefile
+	cp ./files/Makefile-spi-stress $(PKG_BUILD_DIR)/util_spi_stress/Makefile
+	cp ./files/Makefile-tx-continuous $(PKG_BUILD_DIR)/util_tx_continuous/Makefile
+	cp ./files/Makefile-tx-test $(PKG_BUILD_DIR)/util_tx_test/Makefile
 	cp ./files/library.cfg $(PKG_BUILD_DIR)/libloragw/library.cfg;
 	cp ./files/Makefile-gw $(PKG_BUILD_DIR)/Makefile;
 endef
@@ -59,12 +65,12 @@ endef
 define Package/lora-gateway/install
 	$(INSTALL_DIR) $(1)/usr/bin/lora
 	$(INSTALL_BIN) $(PKG_BUILD_DIR)/libloragw/test* $(1)/usr/bin/lora
-#	$(INSTALL_BIN) $(PKG_BUILD_DIR)/util_pkt_logger/util_pkt_logger $(1)/usr/bin/lora
-#	$(INSTALL_BIN) $(PKG_BUILD_DIR)/util_lbt_test/util_lbt_test $(1)/usr/bin/lora
-#	$(INSTALL_BIN) $(PKG_BUILD_DIR)/util_spi_stress/util_spi_stress $(1)/usr/bin/lora
-#	$(INSTALL_BIN) $(PKG_BUILD_DIR)/util_tx_test/util_tx_test $(1)/usr/bin/lora
-#	$(INSTALL_BIN) $(PKG_BUILD_DIR)/util_tx_continuous/util_tx_continuous $(1)/usr/bin/lora
-#	$(INSTALL_BIN) $(PKG_BUILD_DIR)/util_spectral_scan/util_spectral_scan $(1)/usr/bin/lora
+	$(INSTALL_BIN) $(PKG_BUILD_DIR)/util_pkt_logger/util_pkt_logger $(1)/usr/bin/lora
+	$(INSTALL_BIN) $(PKG_BUILD_DIR)/util_lbt_test/util_lbt_test $(1)/usr/bin/lora
+	$(INSTALL_BIN) $(PKG_BUILD_DIR)/util_spi_stress/util_spi_stress $(1)/usr/bin/lora
+	$(INSTALL_BIN) $(PKG_BUILD_DIR)/util_tx_test/util_tx_test $(1)/usr/bin/lora
+	$(INSTALL_BIN) $(PKG_BUILD_DIR)/util_tx_continuous/util_tx_continuous $(1)/usr/bin/lora
+	$(INSTALL_BIN) $(PKG_BUILD_DIR)/util_spectral_scan/util_spectral_scan $(1)/usr/bin/lora
 endef
 
 $(eval $(call BuildPackage,lora-gateway))
