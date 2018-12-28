@@ -151,11 +151,11 @@ Finally compiled generated files firmware in the folder out/target/bin
 It will display:
 <div align=center> <img src="https://github.com/RAKWireless/wiscore/blob/master/img/RAK831_WisAp_Spi.png" /> </div>
 
-
 5.Check the ID and Service
 check the gateway ID(Gateway EUI) and server address.
 
 6.Start Lora Gateway
 
-    cd /usr/bin/lora
-    ./lora_pkt_fwd
+power on the Gateway and the packet_forwarder will auto start. check the log file at /usr/bin/packet_forwarder/log
+
+Finally you can see the Status is connected in the gateway overview, then the gateway will be started and you can use it.
