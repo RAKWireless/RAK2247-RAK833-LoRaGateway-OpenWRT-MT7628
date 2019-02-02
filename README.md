@@ -146,7 +146,7 @@ Finally compiled generated files firmware in the folder out/target/bin
 4.Check the connection of RAK833 and EVK, excute:    
 
     cd /usr/bin/lora
-    ./reset_lgw.sh start 11
+    ./test_loragw_spi
 
 It will display:
 <div align=center> <img src="https://github.com/RAKWireless/wiscore/blob/master/img/RAK831_WisAp_Spi.png" /> </div>
