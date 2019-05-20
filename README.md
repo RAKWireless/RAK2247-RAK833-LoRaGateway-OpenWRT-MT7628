@@ -1,7 +1,7 @@
 # Welcome to the WisLora wiki!
 The WisLora is WisAp(Mt7628 + OpenWRT) and Lora gateway, here to use RAK833. It is based on the latest SX1301 driver lora_gateway v5.0.1 and semtech packet_forwarder v4.0.1. We've tested it with TTN.
 
-# RAK833 USB interface usage
+# RAK2247&RAK833 USB interface usage
 
 ## Compile SDK
 
@@ -13,7 +13,7 @@ Compile dependency with ubuntu 14.04
 Open terminal, and type the following:<br>
 
     cd Desktop
-    git clone https://github.com/RAKWireless/RAK833-LoRaGateway-OpenWRT-MT7628.git RAK833-LoRaGateway-OpenWRT-MT7628-USB
+    git clone https://github.com/RAKWireless/RAK2247-RAK833-LoRaGateway-OpenWRT-MT7628.git RAK833-LoRaGateway-OpenWRT-MT7628-USB
 
 
 ### Step 2: to set compile environment
@@ -84,18 +84,8 @@ BTY. this project also tested with [loraserver](https://www.loraserver.io/).
 <div align=center> <img src="https://github.com/RAKWireless/wiscore/blob/master/img/ThingsC_con.png" /> </div>
 
 
-# RAK833 SPI interface usage
-the RAK833 mini-PCIe module also support spi connection, here list the procedure tested on EVK-RAK833 board.
-
-
-## OverView
-EVK-RAK833:
-<div align=center> <img src="https://github.com/RAKWireless/WisCore/blob/master/img/EVK-RAK833.png" width = "600" /> </div>
-
-RAK833 module:
-
-<div align=center> <img src="https://github.com/RAKWireless/WisCore/blob/master/img/rak833-pcie.png" width = "600"/> </div>
-Here the RAK833 is Lora Gateway
+# RAK2247&RAK833 SPI interface usage
+the RAK2247&RAK833 mini-PCIe module also support spi connection, here list the procedure tested on EVK-RAK833 board.
 
 
 ## Compile SDK
