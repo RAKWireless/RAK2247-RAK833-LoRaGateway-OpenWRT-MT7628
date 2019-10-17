@@ -3,6 +3,9 @@ The WisLora is WisAp(Mt7628 + OpenWRT) and Lora gateway, here to use RAK833. It 
 
 # RAK2247&RAK833 USB interface usage
 
+## Compilation environment requirements:
+Ubuntu16, gcc version 5.x
+
 ## Compile SDK
 
 Compile dependency with ubuntu 14.04
