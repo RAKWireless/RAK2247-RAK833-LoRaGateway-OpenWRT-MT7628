@@ -8,7 +8,7 @@ Ubuntu16, gcc version 5.x
 
 ## Compile SDK
 
-Compile dependency with ubuntu 14.04
+Compile dependency with ubuntu 16.04
 
 	sudo apt-get install build-essential subversion git-core libncurses5-dev zlib1g-dev gawk flex quilt libssl-dev xsltproc libxml-parser-perl mercurial bzr ecj cvs unzip
 
